@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>survey-form</title>
+</head>
+<body>
+  <header class="header">
+    <h1 id="title">Formulário FreeCodeCamp <img src="https://img.icons8.com/color/512/free-code-camp.png" /></h1> 
+    <p id="description">Obrigado por nos ajudar a melhorar a plataforma!</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">Nome: <input type="text" id="name" name="name" placeholder="Preencha com seu nome" required/></label>
+       <label id="email-label">Email: <input type="email" id="email" name="email" placeholder="Preencha com seu email" required/></label>
+        <label id="number-label">Idade: <input type="number" id="number" name="number" min="18" max="100" placeholder="Preencha com sua idade" required/></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>O que você faz no atual momento?
+        <select id="dropdown">
+    <option>Selecione uma opção</option>
+    <option>Trabalho</option>
+    <option>Estudo</option>
+    <option>Prefiro não dizer</option>
+          </select>
+          </fieldset>
+
+          <fieldset>
+          <legend>Qual sua afinidade com HTML, CSS e JS? </legend>
+          <label for="radio">
+            <input type="radio" value="radio" name="radio">Iniciante
+            </label>
+            <label for="radio">
+            <input type="radio" value="radio" name="radio">Intermediario</label>
+            <label for="radio">
+            <input type="radio" value="radio" name="radio">Avançado</label>
+            </fieldset>
+
+<fieldset>
+<legend>Em qual área você quer se especializar?</legend>
+<label>
+  <input type="checkbox" value="opsao1"/>Desenvolvimento Web </label>
+  <label>
+  <input type="checkbox" value="opsao2"/>Desenvolvimento Móvel </label>
+  <label>
+  <input type="checkbox" value="opsao2"/>Desenvolvimento de Jogos </label>
+  <label>
+  <input type="checkbox" value="opsao2"/>Outro </label>
+  </fieldset>
+
+  <fieldset>
+    <label>Alguma sugestão? 
+      <textarea></textarea>
+    </fieldset>
+
+    <button id="submit" value="submit">Enviar</button>
+    </form>
+</body>
+</html>
